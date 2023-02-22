@@ -73,6 +73,22 @@
     }
 }
 
+.action {
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    min-width: 20px;
+    font-size: 15px;
+    border-radius: 50%;
+    transition: all ease-in-out 200ms;
+    background-color: rgba(22, 24, 35, 0.06);
+    margin-top: 8px;
+    margin-bottom: 6px;
+
+    cursor: pointer;
+}
+
 // Button sizes
 .small {
     min-width: 88px;

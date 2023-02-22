@@ -30,7 +30,7 @@ function AccountItem({ label }) {
                         {label === 'Suggested accounts' ? (
                             <Tippy
                                 interactive
-                                delay={[200, 0]}
+                                delay={[500, 0]}
                                 offset={[-20, 0]}
                                 placement="bottom"
                                 render={(attrs) => (
