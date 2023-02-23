@@ -2,8 +2,10 @@ import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import DefaultLayout from '~/layouts';
-
+import Modal from './components/Modal';
+import React, { useState } from 'react';
 function App() {
+    const [openModal, setOpenModal] = useState(false);
     return (
         <Router>
             <div className="App">
@@ -32,6 +34,8 @@ function App() {
                     })}
                 </Routes>
             </div>
+            {/* <button onClick={() => setOpenModal(true)}>Log in</button> */}
+            <Modal open={openModal} onClose={() => setOpenModal(false)} />
         </Router>
     );
 }

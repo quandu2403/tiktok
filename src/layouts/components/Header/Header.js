@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
@@ -13,7 +14,7 @@ import {
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-
+import Modal from '~/components/Modal';
 import config from '~/config';
 import Button from '~/components/Button';
 import styles from './Header.module.scss';
@@ -94,6 +95,8 @@ function Header() {
         },
     ];
 
+    // handle modal
+    const [openModal, setOpenModal] = useState(false);
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -125,8 +128,13 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button text>Upload</Button>
-                            <Button primary>Log in</Button>
+                            <Button onClick={() => setOpenModal(true)} text>
+                                Upload
+                            </Button>
+                            <Button onClick={() => setOpenModal(true)} primary>
+                                Log in
+                            </Button>
+                            <Modal open={openModal} onClose={() => setOpenModal(false)} />
                         </>
                     )}
 

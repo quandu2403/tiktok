@@ -67,6 +67,36 @@
     }
 }
 
+.outlinesolid {
+    width: 100%;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 1);
+
+    .icon {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 20px;
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .icon + .title,
+    .title + .icon {
+        margin-left: 0px;
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
 .text {
     &:hover {
         text-decoration: underline;
