@@ -8,7 +8,6 @@ import styles from './AccountPreview.module.scss';
 const cx = classNames.bind(styles);
 
 function AccountPreview({ data }) {
-    console.log(data);
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
