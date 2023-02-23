@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tiktok/static/css/main.8168f854.css",
-    "main.js": "/tiktok/static/js/main.ae77012c.js",
+    "main.js": "/tiktok/static/js/main.f006f309.js",
     "static/js/787.4c9d15e8.chunk.js": "/tiktok/static/js/787.4c9d15e8.chunk.js",
     "static/media/ProximaNova-Semibold.woff2": "/tiktok/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
     "static/media/sofiapro-bold.woff": "/tiktok/static/media/sofiapro-bold.086ed00f3060992f2938.woff",
@@ -10,11 +10,11 @@
     "static/media/logo.svg": "/tiktok/static/media/logo.3cd08bc06988cfb99d156f762ae23257.svg",
     "index.html": "/tiktok/index.html",
     "main.8168f854.css.map": "/tiktok/static/css/main.8168f854.css.map",
-    "main.ae77012c.js.map": "/tiktok/static/js/main.ae77012c.js.map",
+    "main.f006f309.js.map": "/tiktok/static/js/main.f006f309.js.map",
     "787.4c9d15e8.chunk.js.map": "/tiktok/static/js/787.4c9d15e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8168f854.css",
-    "static/js/main.ae77012c.js"
+    "static/js/main.f006f309.js"
   ]
 }
