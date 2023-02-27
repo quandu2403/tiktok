@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
-import * as searchServices from '~/services/searchService';
+import * as suggestedAccounts from '~/services/suggestedAccounts';
 import AccountPreview from './AccountPreview/AccountPreview';
 import styles from './SuggestedAccounts.module.scss';
 
@@ -16,7 +16,7 @@ function AccountItem({ label }) {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const result = await searchServices.search('ph');
+            const result = await suggestedAccounts.list();
             setSuggestAccounts(result);
         };
 
@@ -50,7 +50,7 @@ function AccountItem({ label }) {
                                                 <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
                                             )}
                                         </p>
-                                        <p className={cx('name')}>{account.full_name}</p>
+                                        <p className={cx('name')}>{account.first_name + ' ' + account.last_name}</p>
                                     </div>
                                 </div>
                             </Tippy>
@@ -64,7 +64,7 @@ function AccountItem({ label }) {
                                             <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
                                         )}
                                     </p>
-                                    <p className={cx('name')}>{account.full_name}</p>
+                                    <p className={cx('name')}>{account.first_name + ' ' + account.last_name}</p>
                                 </div>
                             </div>
                         )}

@@ -66,11 +66,22 @@
 }
 
 .video-music {
+    display: flex;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     margin-top: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    .icon-music {
+        margin-right: 5px;
+        margin-top: 3px;
+    }
 }
 
 .video-container {
