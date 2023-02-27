@@ -17,6 +17,7 @@ function AccountItem({ label }) {
     useEffect(() => {
         const fetchApi = async () => {
             const result = await suggestedAccounts.list();
+            console.log(result);
             setSuggestAccounts(result);
         };
 

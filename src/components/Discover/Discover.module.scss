@@ -1,0 +1,42 @@
+.wrapper {
+    border-top: 1px solid #e3e3e4;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 8px 8px;
+}
+
+.discover-title {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 16px;
+}
+
+.list-discover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn-discover {
+    display: flex;
+    width: fit-content;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
+
+.discover-content {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}

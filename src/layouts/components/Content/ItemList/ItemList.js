@@ -107,10 +107,14 @@ function ItemList() {
                                         <strong>{video.title}</strong>
                                     </span>
                                 </div>
-                                <h4 className={cx('video-music')}>
-                                    <FontAwesomeIcon className={cx('icon-music')} icon={faMusic} />
-                                    {video.music}
-                                </h4>
+                                {video.music.length > 0 ? (
+                                    <h4 className={cx('video-music')}>
+                                        <FontAwesomeIcon className={cx('icon-music')} icon={faMusic} />
+                                        {video.music}
+                                    </h4>
+                                ) : (
+                                    <span className={cx('video-music')}></span>
+                                )}
                                 <div className={cx('video-container')}>
                                     <div className={cx('video-wrapper')}>
                                         <video
