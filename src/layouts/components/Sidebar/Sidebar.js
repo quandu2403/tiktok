@@ -13,6 +13,7 @@ import {
 import SuggestedAccounts from '~/components/SuggestedAccounts';
 import LoginSidebar from '~/components/LoginSidebar';
 import Discover from '~/components/Discover';
+import FooterSidebar from '~/components/FooterSidebar';
 import config from '~/config';
 
 const cx = classNames.bind(styles);
@@ -35,6 +36,7 @@ function Sidebar() {
             <SuggestedAccounts label="Suggested accounts" />
             {checkLogin && <SuggestedAccounts label="Following accounts" />}
             <Discover />
+            <FooterSidebar />
         </aside>
     );
 }
